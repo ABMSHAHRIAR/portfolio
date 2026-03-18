@@ -1,0 +1,361 @@
+@media (max-width: 1270px) {
+    .about-me {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .about-links {
+        width: min(100%, 360px);
+        margin-top: 40px;
+    }
+
+    .about-links ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .about-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 44px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .about-me,
+    .education,
+    .projects,
+    .experience,
+    .training-certifications,
+    .activities {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .about-text {
+        width: 100%;
+        max-width: 540px;
+        font-size: 1.25rem;
+        height: auto;
+    }
+
+    .about-right {
+        height: 330px;
+        width: 330px;
+    }
+
+    .project-pics {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .pic1,
+    .pic2,
+    .pic3 {
+        width: 280px;
+        height: 185px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        font-size: 1.05rem;
+        height: auto;
+        padding: 10px 8px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 8px;
+        column-gap: 10px;
+    }
+
+    .navbar li {
+        margin-left: 0;
+    }
+
+    .about-me,
+    .education,
+    .projects,
+    .experience,
+    .activities {
+        height: auto;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .about-me {
+        min-width: 0;
+        gap: 30px;
+        padding-top: 95px;
+    }
+
+    .about-right {
+        height: 280px;
+        width: 280px;
+    }
+
+    .about-links {
+        width: min(100%, 430px);
+    }
+
+    .about-links ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .projects p,
+    .education p,
+    .exp-content p,
+    .train-content p,
+    .act-content p,
+    .exp-content ul ul,
+    .train-content ul ul,
+    .act-content ul ul {
+        font-size: 1.1rem;
+    }
+
+    .project-pics {
+        gap: 12px;
+    }
+
+    .pic1,
+    .pic2,
+    .pic3 {
+        width: 240px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 890px) {
+    .navbar {
+        height: auto;
+        padding: 10px 8px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 8px;
+        column-gap: 10px;
+    }
+
+    .navbar li {
+        margin-left: 0;
+    }
+
+    .about-me {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 80px;
+    }
+
+    .about-left {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .about-right {
+        margin-top: 20px;
+        height: 250px;
+        width: 250px;
+    }
+
+    .about-links {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .project-pics {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .pic1,
+    .pic2,
+    .pic3 {
+        width: 100%;
+        height: 180px;
+        background-position: center;
+    }
+
+    .pic3 {
+        grid-column: span 2;
+    }
+
+    .education li {
+        align-items: flex-start;
+    }
+
+    .discription h2,
+    .pro-content h2,
+    .exp-content h2,
+    .act-content h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .project-pics {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .logo1,
+    .logo2,
+    .logo3 {
+        width: 85px;
+        height: 85px;
+    }
+
+    .pic3 {
+        grid-column: auto;
+    }
+
+    .pic1,
+    .pic2,
+    .pic3 {
+        height: 170px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        font-size: 0.9rem;
+        padding: 8px 6px;
+    }
+
+    .about-me,
+    .education,
+    .projects,
+    .experience,
+    .training-certifications,
+    .activities {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .heading {
+        margin-top: 50px;
+        height: auto;
+    }
+
+    .heading h1 {
+        font-size: 1.6rem;
+    }
+
+    .about-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-left h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-right {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-links ul a {
+        font-size: 1.25rem;
+    }
+
+    .education li {
+        flex-direction: column;
+    }
+
+    .logo1,
+    .logo2,
+    .logo3 {
+        width: 70px;
+        height: 70px;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .education p,
+    .projects p,
+    .exp-content p,
+    .train-content p,
+    .act-content p,
+    .exp-content ul ul,
+    .train-content ul ul,
+    .act-content ul ul {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .pro-content,
+    .edu-content,
+    .exp-content,
+    .train-content,
+    .act-content {
+        margin-top: 40px;
+    }
+
+    .project-pics {
+        grid-template-columns: 1fr;
+    }
+
+    .pic3 {
+        grid-column: auto;
+    }
+
+    .pic1,
+    .pic2,
+    .pic3 {
+        height: 165px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .about-left h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+    }
+
+    .about-links ul {
+        justify-content: space-between;
+    }
+
+    .logo1,
+    .logo2,
+    .logo3 {
+        width: 58px;
+        height: 58px;
+    }
+
+    footer {
+        font-size: 0.85rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+}

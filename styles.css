@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    font-size: clamp(0.82rem, 0.65rem + 0.7vw, 1.25rem);
+    position: fixed;
+    backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li {
+
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.navbar a:hover {
+
+    background-color: white;
+    color: black;
+}
+
+.navbar a {
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0 100px;
+    min-height: fit-content;
+    min-width: fit-content;
+    margin-bottom: 5vh;
+}
+
+.about-right {
+    background-image: url("portrait.jpg");
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.about-left {
+    margin-top: 50px;
+}
+
+.about-left h1 {
+    font-size: clamp(1.8rem, 1.25rem + 2.2vw, 3rem);
+}
+
+.about-left h3 {
+    font-size: clamp(1.05rem, 0.9rem + 0.9vw, 1.5rem);
+}
+
+.about-text {
+    height: 300px;
+    width: 600px;
+    font-size: clamp(0.95rem, 0.78rem + 0.9vw, 1.5rem);
+    color: rgb(225, 225, 225);
+    text-align: justify;
+}
+
+.about-links {
+    width: 40%;
+}
+
+.about-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.about-links ul a {
+    color: white;
+    font-size: clamp(1.05rem, 0.9rem + 0.8vw, 1.5rem);
+}
+
+.about-links a:hover {
+
+    background-color: white;
+    color: black;
+}
+
+.about-links a {
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hr {
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.heading {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+.heading h1 {
+    /* border: 2px solid rgb(225, 225, 225); */
+    padding: 5px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-size: clamp(1.45rem, 1.1rem + 1.4vw, 2.2rem);
+}
+
+.discription h2,
+.pro-content h2,
+.exp-content h2,
+.act-content h2 {
+    font-size: clamp(1.05rem, 0.9rem + 1vw, 1.6rem);
+}
+
+.education {
+    height: 100vh;
+    margin: 0 11%;
+    min-height: fit-content;
+    margin-bottom: 5vh;
+}
+
+.edu-content {
+    margin-top: 80px;
+}
+
+.education li {
+    display: flex;
+}
+
+.logo1 {
+    height: 100px;
+    width: 100px;
+    background-image: url("mist.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.logo2 {
+    height: 100px;
+    width: 100px;
+    background-image: url("cpscr.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.logo3 {
+    height: 100px;
+    width: 100px;
+    background-image: url("kghs.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.education p {
+    font-size: clamp(0.95rem, 0.83rem + 0.6vw, 1.25rem);
+    margin-left: 30px;
+    color: rgb(225, 225, 225);
+    text-align: justify;
+}
+
+.projects {
+    height: 100vh;
+    margin: 0 11%;
+    min-height: fit-content;
+    margin-bottom: 5vh;
+}
+
+
+.pro-content {
+    margin-top: 80px;
+}
+
+.pro-content a {
+    color: rgb(16, 166, 230);
+    text-decoration: underline;
+}
+
+.projects p {
+    font-size: clamp(1rem, 0.85rem + 0.9vw, 1.5rem);
+    margin-left: 5%;
+    color: rgb(225, 225, 225);
+    text-align: justify;
+}
+
+.project-pics {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-left: 0;
+}
+
+.pic1 {
+    height: 200px;
+    width: 300px;
+    max-width: 100%;
+    background-image: url("project1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pic2 {
+    height: 200px;
+    width: 300px;
+    max-width: 100%;
+    background-image: url("project3.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pic3 {
+    height: 200px;
+    width: 300px;
+    max-width: 100%;
+    background-image: url("project2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.experience {
+    height: 100vh;
+    margin: 0 11%;
+    min-height: fit-content;
+    /* margin-bottom: 30px; */
+    margin-bottom: 5vh;
+}
+
+.exp-content {
+    margin-top: 80px;
+}
+
+.exp-content p {
+    font-size: clamp(0.95rem, 0.83rem + 0.6vw, 1.25rem);
+    color: rgb(225, 225, 225);
+    text-align: justify;
+}
+
+.exp-content ul {
+    list-style-type: none;
+}
+
+.exp-content ul ul {
+    list-style-type: disc;
+    margin-left: 10%;
+    font-size: clamp(0.95rem, 0.83rem + 0.6vw, 1.25rem);
+}
+
+
+.training-certifications {
+    height: 100vh;
+    margin: 0 11%;
+    min-height: fit-content;
+    margin-bottom: 5vh;
+}
+
+.train-content {
+    margin-top: 80px;
+}
+
+.train-content p {
+    font-size: clamp(0.95rem, 0.83rem + 0.6vw, 1.25rem);
+    color: rgb(225, 225, 225);
+    text-align: justify;
+}
+
+.train-content ul {
+    list-style-type: none;
+}
+
+.train-content ul ul {
+    list-style-type: disc;
+    margin-left: 10%;
+    font-size: clamp(0.95rem, 0.83rem + 0.6vw, 1.25rem);
+}
+
+.activities {
+    height: 100vh;
+    margin: 0 11%;
+    min-height: fit-content;
+    margin-bottom: 5vh;
+}
+
+.act-content {
+    margin-top: 80px;
+}
+
+.act-content p {
+    font-size: clamp(0.95rem, 0.83rem + 0.6vw, 1.25rem);
+    color: rgb(225, 225, 225);
+    text-align: justify;
+}
+
+.act-content ul {
+    list-style-type: none;
+}
+
+.act-content ul ul {
+    list-style-type: disc;
+    margin-left: 10%;
+    font-size: clamp(0.95rem, 0.83rem + 0.6vw, 1.25rem);
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.78rem, 0.7rem + 0.4vw, 1rem);
+    backdrop-filter: blur(10px);
+}

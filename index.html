@@ -42,7 +42,7 @@ while advancing my personal growth.
                 <div class="about-links">
                     <ul>
                         <li><a target="_blank" href="https://drive.google.com/file/d/1X-0a0ais9FNeZ-LUIzDwh4hlOpykKwdX/view?usp=drive_link"><i class="fa-solid fa-download">CV</i></a></li>
-                        <li><a href="mailto:abm.shahriar464@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a target="_blank" href="https://tinyurl.com/2ruudfn"><i class="fa-solid fa-envelope"></i></a></li>
                         <li><a target="_blank" href="http://www.linkedin.com/in/abm-shahriar-7s7"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                 </div>
@@ -80,7 +80,7 @@ while advancing my personal growth.
                     <li>
                         <div class="logo2"></div>
                         <div class="discription">
-                            <h2>Higher Secondary School Certificate (Science) :</h2> <br>
+                            <h2>Higher Secondary Certificate (Science) :</h2> <br>
                             <p>Cantonment Public School and College Rangpur (CPSCR) <br><br>
                                 GPA: 5.00/5.00 | Year: 2020</p><br><br>
                         </div>
@@ -111,16 +111,16 @@ while advancing my personal growth.
             <div class="pro-content">
                 <ul>
                     <li>
-                        <h2><a target="_blank" href="https://www.linkedin.com/posts/abm-shahriar-7s7_shipdesign-3dmodeling-navalarchitecture-activity-7311788627242405888-guSV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyvCRsB_UNXr3rm1kpuRvbS7NJL2ieM7lg">“Design and Analysis of a 140 TEUs Inland Container Ship” :</a> </h2><br><br>
+                        <h2>Design and Analysis of a 140 TEUs Inland Container Ship</h2><br><br>
                         <div class="project-pics">
                             <div class="pic1"></div>
                             <div class="pic2"></div>
                             <div class="pic3"></div>
                         </div>
-                        <p>Proud to complete the design phase and successfully present the physical 3D model of a 140
-                            TEUs Inland Container Ship. This journey involved extensive design work, stability analysis,
-                            and refining details to ensure efficiency and practicality. Seeing the concept take shape in
-                            3D was a truly rewarding experience!</p>
+                        <p>Completed the design phase and successfully present the physical 3D model of a 140
+                                                        TEUs Inland Container Ship. This journey involved extensive design work, stability analysis,
+                                                        and refining details to ensure efficiency and practicality. Seeing the concept take shape in
+                                                        3D was a truly rewarding experience!</p>
                     </li>
                 </ul>
             </div>
@@ -309,6 +309,34 @@ while advancing my personal growth.
             © A. B. M. Shahriar  ||  All rights Reserved.
         </p>
     </footer>
+
+    <script>
+        const sections = document.querySelectorAll('main > div[id]');
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + entry.target.id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 
 </body>
 

@@ -114,9 +114,11 @@
     .exp-content p,
     .train-content p,
     .act-content p,
+    .award-content p,
     .exp-content ul ul,
     .train-content ul ul,
-    .act-content ul ul {
+    .act-content ul ul,
+    .award-content ul ul {
         font-size: 1.1rem;
     }
 
@@ -210,7 +212,8 @@
     .discription h2,
     .pro-content h2,
     .exp-content h2,
-    .act-content h2 {
+    .act-content h2,
+    .award-content h2 {
         font-size: 1.2rem;
     }
 }
@@ -299,9 +302,11 @@
     .exp-content p,
     .train-content p,
     .act-content p,
+    .award-content p,
     .exp-content ul ul,
     .train-content ul ul,
-    .act-content ul ul {
+    .act-content ul ul,
+    .award-content ul ul {
         font-size: 1rem;
         margin-left: 0;
     }
@@ -310,7 +315,8 @@
     .edu-content,
     .exp-content,
     .train-content,
-    .act-content {
+    .act-content,
+    .award-content {
         margin-top: 40px;
     }
 

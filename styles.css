@@ -160,6 +160,9 @@ a {
     color: var(--text);
     text-decoration: underline;
     font-size: clamp(1.155rem, 0.8925rem + 1.155vw, 1.89rem);
+    text-align: center;
+    width: min(100%, 30ch);
+    margin: 0 auto;
 }
 
 .discription h2,

@@ -63,7 +63,7 @@ a {
 }
 
 .about-right {
-    background-image: url("portrait.jpg");
+    background-image: url("portrait.png");
     height: 400px;
     width: 400px;
     background-size: cover;
@@ -145,7 +145,8 @@ a {
 .discription h2,
 .pro-content h2,
 .exp-content h2,
-.act-content h2 {
+.act-content h2,
+.award-content h2 {
     font-size: clamp(1.05rem, 0.9rem + 1vw, 1.6rem);
 }
 
@@ -157,7 +158,7 @@ a {
 }
 
 .edu-content {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .education li {
@@ -207,7 +208,7 @@ a {
 
 
 .pro-content {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .pro-content a {
@@ -270,7 +271,7 @@ a {
 }
 
 .exp-content {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .exp-content p {
@@ -298,7 +299,7 @@ a {
 }
 
 .train-content {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .train-content p {
@@ -325,7 +326,7 @@ a {
 }
 
 .act-content {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .act-content p {
@@ -344,6 +345,33 @@ a {
     font-size: clamp(0.95rem, 0.83rem + 0.6vw, 1.25rem);
 }
 
+.awards {
+    height: 100vh;
+    margin: 0 11%;
+    min-height: fit-content;
+    margin-bottom: 5vh;
+}
+
+.award-content {
+    margin-top: 40px;
+}
+
+.award-content p {
+    font-size: clamp(0.95rem, 0.83rem + 0.6vw, 1.25rem);
+    color: rgb(225, 225, 225);
+    text-align: justify;
+}
+
+.award-content ul {
+    list-style-type: none;
+}
+
+.award-content ul ul {
+    list-style-type: disc;
+    margin-left: 10%;
+    font-size: clamp(0.95rem, 0.83rem + 0.6vw, 1.25rem);
+}
+
 footer {
     height: 60px;
     width: 100%;
@@ -353,4 +381,12 @@ footer {
     justify-content: center;
     font-size: clamp(0.78rem, 0.7rem + 0.4vw, 1rem);
     backdrop-filter: blur(10px);
+}
+
+.train-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
 }
